@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon-32x32.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;800&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>sunnySide</title>
+
+  </head>
+  <body onload="init()">
+
+    <div class="wrapper">
+
+      <div class="menu">
+        <ul>
+          <li>About</li>
+          <li>Services</li>
+          <li>Projects</li>
+        </ul>
+        <button>CONTACT</button>
+      </div>
+
+      <div id="header">
+        <nav>
+          <p class="logo">sunnyside.</p>
+          <div id="hamburger" onclick="openMenu()">
+            <div class="bLayer"></div>
+            <div class="bLayer"></div>
+            <div class="bLayer"></div>
+          </div>
+        </nav>
+
+        <p>WE ARE CREATIVES</p>
+        <div id="arrowDown"></div>
+      </div><!--end of header-->
+
+      <div id="skills">
+
+        <div id="transform" class="infoSkill">
+          <img src="images/mobile/image-transform.jpg" />
+          <div class="imgInfoCard">
+            <h3>Transform your brand</h3>
+            <p class="normalP">We are a full-service creative agency specializing in helping brands grow fast. 
+              Engage your clients through compelling visuals that do most of the marketing for you.
+            </p>
+            <div id="underTrans" class="underAColor"><a>LEARN MORE</a></div>
+          </div>
+        </div>
+
+        <div id="standOut" class="infoSkill">
+          <img src="images/mobile/image-stand-out.jpg" />
+          <div class="imgInfoCard">
+            <h3>Stand out to the right audience</h3>
+            <p class="normalP">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
+            <div id="underStand" class="underAColor"><a>LEARN MORE</a></div>
+          </div>
+        </div>
+
+        <div id="graphic" class="secondKindSkill">
+          <div class="imgInfoCard">
+            <h3>Graphic design</h3>
+            <p class="normalP">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+          </div>
+        </div>
+
+        <div id="photography" class="secondKindSkill">
+          <div class="imgInfoCard">
+            <h3>Photography</h3>
+            <p class="normalP">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+          </div>
+        </div>
+
+      </div><!--end of skills-->
+
+      <div class="reviews">
+
+        <h4>CLIENT TESTIMONIALS</h4>
+
+        <div class="reviewCard">
+          <img src="images/image-emily.jpg" />
+          <p class="normalP">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <p class="reviewName">Emily R.</p>
+          <p class="reviewJobPosition">Marketing Director</p>
+        </div>
+
+        <div class="reviewCard">
+          <img src="images/image-thomas.jpg" />
+          <p class="normalP">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+          <p class="reviewName">Thomas S.</p>
+          <p class="reviewJobPosition">Chief Operating Officer</p>
+        </div>
+
+        <div class="reviewCard">
+          <img src="images/image-jennie.jpg" />
+          <p class="normalP">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <p class="reviewName">Jennie F.</p>
+          <p class="reviewJobPosition">Business Owner</p>
+        </div>
+
+      </div><!--end of reviews-->
+
+      <div class="images">
+
+        <img src="images/mobile/image-gallery-milkbottles.jpg" />
+        <img src="images/mobile/image-gallery-orange.jpg" />
+        <img src="images/mobile/image-gallery-cone.jpg" />
+        <img src="images/mobile/image-gallery-sugar-cubes.jpg" />
+      
+      </div><!--end of images-->
+
+      <div class="footer">
+        <h1 class="logo">sunnyside</h1>
+        <ul>
+          <li>About</li>
+          <li>Services</li>
+          <li>Projects</li>
+        </ul>
+        <div class="socialmedia">
+          <div id="facebook"></div>
+          <div id="insta"></div>
+          <div id="twitter"></div>
+          <div id="pintrest"></div>
+        </div>
+      </div><!--end of footer-->
+
+    </div><!--end of wrapper-->
+  </body>
+</html>
