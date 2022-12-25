@@ -1,4 +1,4 @@
-*{
+:root{
   margin: 0;
   font-size: 18px;
   font-family: 'Barlow', sans-serif;
@@ -120,10 +120,6 @@ nav{
   height: 100vh;
 }
 
-.infoSkill > img{
-  width: 100%;
-  height: 40%;
-}
 .imgInfoCard {
   width: 80%;
   height: 46%;
@@ -144,7 +140,7 @@ nav{
 }
 .normalP{
   color:hsl(232, 10%, 55%);
-  line-height: 1.5em;
+  line-height: 1.7rem;
   margin:10% 0% 15% 0;
 
   text-align: center;
@@ -173,6 +169,17 @@ nav{
   top:-80%;
 
   cursor: pointer;
+}
+#imgTransform, #imgStand{
+  width: 100vw;
+  aspect-ratio: 1 / 0.8;
+  background-size: contain;
+}
+#imgTransform{
+  background-image:url(images/mobile/image-transform.jpg);
+}
+#imgStand{
+  background-image:url(images/mobile/image-stand-out.jpg);
 }
 
 #underTrans{
@@ -348,4 +355,62 @@ ul {
 }
 #pintrest{
   background-image: url(images/icon-pinterest.svg);
+}
+
+
+@media only screen and (min-width: 600px) {
+  :root{
+    font-size: 1.5vw;
+  }
+  body{
+    margin: 0;
+  }
+  #header{
+    background-image:url(images/desktop/image-header.jpg);
+  }
+  #imgTransform, #imgStand{
+    width: 50vw;
+    aspect-ratio: 1 / 0.8;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #imgTransform{
+    background-image:url(images/desktop/image-transform.jpg);
+  }
+  #imgStand{
+    background-image:url(images/desktop/image-stand-out.jpg);
+  }
+  .infoSkill{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 45vw;
+  }
+  .infoSkill:nth-child(1){
+    flex-direction: row-reverse;
+  }
+  .imgInfoCard{
+    margin: 12% 5%;
+  }
+  .normalP{
+    font-size: 1.3rem;
+  }
+
+  #graphic{
+    background-image:url(images/desktop/image-graphic-design.jpg);
+
+  }
+  #photography{
+    background-image:url(images/desktop/image-photography.jpg);
+  }
+  #flex{
+    display: flex;
+    flex-direction: row;
+    width:100vw;
+    height: 50vw;
+  }
+  #flex > *{
+    height: 50vw;
+  }
 }
